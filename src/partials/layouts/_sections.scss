@@ -1,0 +1,19 @@
+#header {
+  width: 100vw;
+  height: max-content;
+  background-color: $primary-color;
+  padding: 1.6rem 0;
+  .container {
+    .navbar {
+      @include mixinFlex($justify: space-between, $gap: 2.4rem);
+    }
+  }
+}
+
+// span {
+//   // @include sizeFont(3rem);
+// }
+
+// .surface {
+//   // padding: mul($base, 15) mul($base, 10);
+// }

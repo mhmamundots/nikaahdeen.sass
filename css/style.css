@@ -1,0 +1,259 @@
+@font-face {
+  font-family: 'Noto Sans Bengali';
+  src: url("../assets/myfont/Noto-Sans-Bengali-Regular400.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Noto Sans Bengali';
+  src: url("../assets/myfont/Noto-Sans-Bengali-Medium500.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Noto Sans Bengali';
+  src: url("../assets/myfont/Noto-Sans-Bengali-SemiBold600.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Noto Sans Bengali';
+  src: url("../assets/myfont/Noto-Sans-Bengali-Bold700.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Noto Sans Bengali';
+  src: url("../assets/myfont/Noto-Sans-Bengali-ExtraBold800.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'Noto Sans Bengali';
+  src: url("../assets/myfont/Noto-Sans-Bengali-Black900.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 900;
+}
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans Bengali", sans-serif;
+}
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+#header {
+  width: 100vw;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: #fafafa;
+  padding: 1.6rem 0;
+}
+#header .container .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.4rem;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0;
+}
+.logo__main {
+  width: 16rem;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.menu__link:link, .menu__link:visited {
+  font-size: 1.6rem;
+  color: #404040;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+.menu__link:hover, .menu__link:active {
+  color: #ef4444;
+}
+
+.btn__item {
+  position: relative;
+}
+.btn__item:hover .btn__sublist {
+  display: inline-block;
+}
+.btn__link:link, .btn__link:visited {
+  font-size: 1.6rem;
+  color: #404040;
+}
+.btn__sublist {
+  border-radius: 0.4rem;
+  width: 100%;
+  padding: 0.8rem 1.2rem;
+  -webkit-box-shadow: 0 0 2.4rem 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 0 2.4rem 0 rgba(0, 0, 0, 0.08);
+  background-color: white;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  display: none;
+}
+.btn__sublink:link, .btn__sublink:visited {
+  font-family: inherit;
+  font-size: 1.6rem;
+  color: #404040;
+}
+.btn__svg {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 2rem;
+}
+.btn__icon {
+  font-size: 1.6rem;
+  margin-right: 0.8rem;
+}
+.btn__signup {
+  border-radius: 0.4rem;
+  padding: 1.2rem 2.4rem;
+  font-family: inherit;
+  font-weight: 600;
+  background-color: #ef4444;
+  border: none;
+  color: #fafafa;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+.btn__login {
+  font-family: inherit;
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
+  color: #404040;
+  cursor: pointer;
+}
+.btn__text {
+  font-size: 1.6rem;
+}
+
+.menu,
+.btn {
+  font-family: "Noto Sans Bengali", sans-serif;
+  font-weight: 600;
+}
+
+.menu__item,
+.btn__item,
+.btn__subitem {
+  list-style: none;
+}
+
+.logo__link:link, .logo__link:visited,
+.menu__link:link,
+.menu__link:visited,
+.btn__link:link,
+.btn__link:visited,
+.btn__sublink:link,
+.btn__sublink:visited {
+  text-decoration: none;
+}
+
+.menu__list,
+.btn,
+.btn__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4rem;
+}
+
+.btn__item:link, .btn__item:visited, .btn__sublink:link, .btn__sublink:visited {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.8rem;
+}
+
+/*# sourceMappingURL=style.css.map */

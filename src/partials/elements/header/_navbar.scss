@@ -1,0 +1,134 @@
+.logo {
+  @include mixinFlex;
+  &__main {
+    width: $base-value * 40;
+    height: max-content;
+  }
+}
+
+.menu {
+  &__link {
+    &:link,
+    &:visited {
+      font-size: $base-value * 4;
+      color: $secondary-color;
+      transition: color 0.2s ease;
+    }
+    &:hover,
+    &:active {
+      color: $main-color;
+    }
+  }
+}
+.btn {
+  &__item {
+    position: relative;
+
+    // Show Language Submenu
+    &:hover .btn__sublist {
+      display: inline-block;
+    }
+  }
+  &__link {
+    &:link,
+    &:visited {
+      font-size: 1.6rem;
+      color: $secondary-color;
+    }
+    // &:hover,
+    // &:active {
+    // }
+  }
+  &__sublist {
+    border-radius: $base-value;
+    width: 100%;
+
+    // padding: 0.8rem 1.2rem;
+    padding: ($base-value * 2) ($base-value * 3);
+    box-shadow: 0 0 2.4rem 0 rgba(0, 0, 0, 0.08);
+    background-color: rgb(255, 255, 255);
+    height: max-content;
+    width: max-content;
+
+    position: absolute;
+    top: $base-value * 5;
+    left: 0;
+
+    // Hide Language Submenu
+    display: none;
+  }
+  &__sublink {
+    &:link,
+    &:visited {
+      font-family: inherit;
+      font-size: $base-value * 4;
+      color: $secondary-color;
+    }
+    // &:hover,
+    // &:active {
+    // }
+  }
+  &__svg {
+    height: max-content;
+    width: $base-value * 5;
+  }
+  &__icon {
+    font-size: $base-value * 4;
+    margin-right: $base-value * 2;
+  }
+  &__signup {
+    // padding: 1.2rem 2.4rem;
+    border-radius: $base-value;
+
+    padding: ($base-value * 3) ($base-value * 6);
+
+    @include mixinButton($bg-color: $main-color, $color: $primary-color);
+    @include mixinFlex($gap: $base-value * 5);
+  }
+  &__login {
+    @include mixinButton($color: $secondary-color);
+  }
+  &__text {
+    font-size: $base-value * 4;
+  }
+}
+
+// Group Selectors
+// DRY(Don't repeat yourself) Code
+.menu,
+.btn {
+  font-family: $primary-font;
+  font-weight: 600;
+}
+
+.menu__item,
+.btn__item,
+.btn__subitem {
+  list-style: none;
+}
+
+.logo__link,
+.menu__link,
+.btn__link,
+.btn__sublink {
+  &:link,
+  &:visited {
+    text-decoration: none;
+  }
+}
+
+.menu__list,
+.btn,
+.btn__group {
+  @include mixinFlex($gap: $base-value * 10);
+}
+
+.btn {
+  &__item,
+  &__sublink {
+    &:link,
+    &:visited {
+      @include mixinFlex($gap: $base-value * 2);
+    }
+  }
+}

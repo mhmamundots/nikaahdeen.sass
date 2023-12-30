@@ -1,0 +1,194 @@
+@mixin mixinFlex(
+  $display: flex,
+  $direction: row,
+  $justify: flex-start,
+  $align: center,
+  $gap: 0
+) {
+  display: $display;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin mixinButton(
+  $font-name: inherit,
+  $weight: 600,
+  $bg-color: transparent,
+  $border: none,
+  $color: transparent,
+  $cursor: pointer
+) {
+  font-family: $font-name;
+  font-weight: $weight;
+  background-color: $bg-color;
+  border: $border;
+  color: $color;
+  cursor: $cursor;
+}
+
+// @mixin sizeFont($size) {
+//   @if $size != 0 {
+//     font-size: $size;
+//   }
+// }
+// @mixin sizeFont($size) {
+//   @if $size != 0 {
+//     font-size: $size;
+//   }
+// }
+
+// //  Math
+// $fontBaseSize: 0.8rem;
+// $baseLineHeight: $fontBaseSize * 1.5;
+
+// $primary: #f1f1f1;
+// $secondary: #515251;
+// $tertiary: #019901;
+// $main: #8000ca;
+
+// // Map Variables
+// $colors: (
+//   'primary': $primary,
+//   'secondary': $secondary,
+//   'tertiary': $tertiary,
+//   'main': $main,
+//   'white': white,
+//   'black': black
+// );
+
+// h1 {
+//   background-color: map-get($colors, 'main');
+// }
+
+// @each $name, $color in $colors {
+//   .surface__#{$name} {
+//     background-color: $color;
+//     &:hover {
+//       background-color: $color;
+//     }
+//     &:last-child {
+//       background-color: $color;
+//     }
+//     &:nth-child(3) {
+//       background-color: $color;
+//     }
+//   }
+//   .content__#{$name} {
+//     color: $color;
+//   }
+
+//   //   @if ($color != white and $color != black) {
+//   // We can use 'to' or 'through' keyword
+//   // Light Variation
+//   @for $i from 0 to length($colors) {
+//     .surface__#{$name}--light-#{$i + 1} {
+//       background-color: mix(white, $color, $i * 10);
+//     }
+//   }
+//   @for $i from 0 to length($colors) {
+//     .content__#{$name}--light-#{$i + 1} {
+//       color: mix(white, $color, $i * 10);
+//     }
+//   }
+
+//   // Dark Variation
+//   @for $i from 0 to length($colors) {
+//     .surface__#{$name}--dark-#{$i + 1} {
+//       background-color: mix(black, $color, $i * 10);
+//     }
+//   }
+//   @for $i from 0 to length($colors) {
+//     .content__#{$name}--dark-#{$i + 1} {
+//       color: mix(black, $color, $i * 10);
+//     }
+//   }
+//   //   }
+// }
+
+// // @use 'sass:math';
+
+// $baseSize: 0.8rem;
+
+// $spaceing: (
+//   '0': 0,
+//   '1': $baseSize,
+//   '2': $baseSize * 2,
+//   '3': $baseSize * 3,
+//   '4': $baseSize * 4,
+//   '5': $baseSize * 5,
+//   '6': $baseSize * 6,
+//   '7': $baseSize * 7,
+//   '8': $baseSize * 8,
+//   '9': $baseSize * 9
+// );
+
+// $utilities: (
+//   'padding': (
+//     'prefix': 'p',
+//     'values': $spaceing
+//   ),
+//   'padding-top': (
+//     'prefix': 'pt',
+//     'values': $spaceing
+//   ),
+//   'padding-right': (
+//     'prefix': 'pr',
+//     'values': $spaceing
+//   ),
+//   'padding-bottom': (
+//     'prefix': 'pb',
+//     'values': $spaceing
+//   ),
+//   'padding-left': (
+//     'prefix': 'pl',
+//     'values': $spaceing
+//   ),
+//   'margin': (
+//     'prefix': 'm',
+//     'values': $spaceing
+//   ),
+//   'margin-top': (
+//     'prefix': 'mt',
+//     'values': $spaceing
+//   ),
+//   'margin-right': (
+//     'prefix': 'mr',
+//     'values': $spaceing
+//   ),
+//   'margin-bottom': (
+//     'prefix': 'mb',
+//     'values': $spaceing
+//   ),
+//   'margin-left': (
+//     'prefix': 'ml',
+//     'values': $spaceing
+//   ),
+//   'opacity': (
+//     'prefix': 'opacity',
+//     'values': (
+//       '10': 0.1,
+//       '20': 0.2,
+//       '30': 0.3,
+//       '40': 0.4,
+//       '50': 0.5,
+//       '60': 0.6,
+//       '70': 0.7,
+//       '80': 0.8,
+//       '90': 0.9,
+//       '100': 1
+//     )
+//   )
+// );
+
+// @each $name, $utility in $utilities {
+//   $prefix: map-get($utility, 'prefix');
+//   $sizes: map-get($utility, 'values');
+
+//   @each $number, $size in $sizes {
+//     .#{$prefix}-#{$number} {
+//       #{$name}: $size;
+//     }
+//   }
+// }

@@ -1,0 +1,80 @@
+// @font-face {
+//   font-family: 'Noto Sans Bengali Regular';
+//   src: url('../assets/myfont/Noto-Sans-Bengali-Regular400.ttf')
+//     format('truetype');
+//   font-style: normal;
+//   font-weight: 400;
+// }
+// @font-face {
+//   font-family: 'Noto Sans Bengali Medium';
+//   src: url('../assets/myfont/Noto-Sans-Bengali-Medium500.ttf')
+//     format('truetype');
+//   font-style: normal;
+//   font-weight: 500;
+// }
+// @font-face {
+//   font-family: 'Noto Sans Bengali SemiBold';
+//   src: url('../assets/myfont/Noto-Sans-Bengali-SemiBold600.ttf')
+//     format('truetype');
+//   font-style: normal;
+//   font-weight: 600;
+// }
+// @font-face {
+//   font-family: 'Noto Sans Bengali Bold';
+//   src: url('../assets/myfont/Noto-Sans-Bengali-Bold700.ttf') format('truetype');
+//   font-style: normal;
+//   font-weight: 700;
+// }
+// @font-face {
+//   font-family: 'Noto Sans Bengali ExtraBold';
+//   src: url('../assets/myfont/Noto-Sans-Bengali-ExtraBold800.ttf')
+//     format('truetype');
+//   font-style: normal;
+//   font-weight: 800;
+// }
+// @font-face {
+//   font-family: 'Noto Sans Bengali Black';
+//   src: url('../assets/myfont/Noto-Sans-Bengali-Black900.ttf') format('truetype');
+//   font-style: normal;
+//   font-weight: 900;
+// }
+@font-face {
+  font-family: 'Noto Sans Bengali';
+  src: url('../assets/myfont/Noto-Sans-Bengali-Regular400.ttf')
+    format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Noto Sans Bengali';
+  src: url('../assets/myfont/Noto-Sans-Bengali-Medium500.ttf')
+    format('truetype');
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Noto Sans Bengali';
+  src: url('../assets/myfont/Noto-Sans-Bengali-SemiBold600.ttf')
+    format('truetype');
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Noto Sans Bengali';
+  src: url('../assets/myfont/Noto-Sans-Bengali-Bold700.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Noto Sans Bengali';
+  src: url('../assets/myfont/Noto-Sans-Bengali-ExtraBold800.ttf')
+    format('truetype');
+  font-style: normal;
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'Noto Sans Bengali';
+  src: url('../assets/myfont/Noto-Sans-Bengali-Black900.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 900;
+}
