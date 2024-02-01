@@ -1,11 +1,12 @@
 #content {
-  width: max-content;
-  height: max-content;
+  width: 100%;
+  height: 100%;
 
   #hero {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    padding: 5.2rem 0;
+    // height: 100%;
+    // padding: 18.45rem 0;
 
     background: linear-gradient(
         90deg,
@@ -18,9 +19,50 @@
     background-size: cover;
     background-position: center;
 
+    // background-color: rgb(255, 203, 194);
+
     display: flex;
-    justify-content: center;
     align-items: center;
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      .registration {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    // width: 100vw;
+    // height: 100vh;
+    // padding: 5.2rem 0;
+
+    // background: linear-gradient(
+    //     90deg,
+    //     rgba($main-color, 0.2) 0%,
+    //     rgba($main-color, 0.7) 50%,
+    //     rgba($main-light-color, 1) 50%
+    //   ),
+    //   url(../assets/images/nikah-deen-bg.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+  }
+}
+
+@media (max-width: 80em) {
+  // 1280px / 16px = 80em
+  #hero {
+    height: 100% !important;
+
+    padding: 18.45rem 0;
   }
 }
 
@@ -28,11 +70,22 @@
   // 992px / 16px = 62em
   #hero {
     background: $main-light-color !important;
+    // height: 100%;
+
+    padding: 8rem 0;
   }
   .media {
     display: none;
   }
   .account {
     width: 100%;
+  }
+}
+
+@media (max-width: 34em) {
+  // 544px / 16px = 34em
+  #hero {
+    // height: max-content;
+    padding: 5.2rem 0;
   }
 }

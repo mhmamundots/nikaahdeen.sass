@@ -56,14 +56,6 @@ body {
   font-family: #404040;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 /*
 // Tag Selector
 div {
@@ -108,17 +100,12 @@ a:focus {
 
 */
 #content {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  width: 100%;
+  height: 100%;
 }
 #content #hero {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  padding: 5.2rem 0;
   background: -webkit-gradient(linear, left top, right top, from(rgba(239, 68, 68, 0.2)), color-stop(50%, rgba(239, 68, 68, 0.7)), color-stop(50%, #fff6f6)), url(../assets/images/nikah-deen-bg.jpg);
   background: linear-gradient(90deg, rgba(239, 68, 68, 0.2) 0%, rgba(239, 68, 68, 0.7) 50%, #fff6f6 50%), url(../assets/images/nikah-deen-bg.jpg);
   background-repeat: no-repeat;
@@ -127,6 +114,23 @@ a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#content #hero .container {
+  width: 80%;
+  margin: 0 auto;
+}
+#content #hero .container .registration {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -135,9 +139,16 @@ a:focus {
           align-items: center;
 }
 
+@media (max-width: 80em) {
+  #hero {
+    height: 100% !important;
+    padding: 18.45rem 0;
+  }
+}
 @media (max-width: 62em) {
   #hero {
     background: #fff6f6 !important;
+    padding: 8rem 0;
   }
 
   .media {
@@ -146,6 +157,11 @@ a:focus {
 
   .account {
     width: 100%;
+  }
+}
+@media (max-width: 34em) {
+  #hero {
+    padding: 5.2rem 0;
   }
 }
 .media {
