@@ -7,80 +7,210 @@
 
     <!-- Fontawesome File -->
     <link type="text/css" rel="stylesheet" href="./css/all.min.css" />
+    <link type="image/x-icon" rel="icon" href="/assets/images/favicon.ico" />
+    <!-- Fontawesome File -->
+    <link type="text/css" rel="stylesheet" href="./css/all.min.css" />
 
     <!-- Main CSS Files -->
     <link type="text/css" rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- Header area starts from here -->
-    <header id="header">
-      <div class="container">
-        <div class="navbar">
-          <div class="logo">
-            <a href="#" class="logo__link">
+    <!-- Content area starts from here -->
+
+    <main id="content">
+      <section id="hero">
+        <div class="container">
+          <div class="media">
+            <a href="./" class="media__link">
               <img
-                src="./assets/images/nikaah-deen.png"
-                alt="Nikaah Deen, It's a Bangladeshi online matrimony"
-                class="logo__main"
+                src="./assets/images/nikah-deen-white.png"
+                alt="Nikah Deen is a Bangladeshi Muslim Matrimony"
+                class="media__img"
               />
             </a>
-          </div>
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a href="#" class="menu__link">আমাদের গল্প</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">বিজ্ঞাপন</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">যোগাযোগ</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="btn">
-            <ul class="btn__list">
-              <li class="btn__item">
-                <i class="btn__icon fa-solid fa-language"></i>
-                <a href="#" class="btn__link">
-                  <span class="btn__text">বাংলা</span>
-                  <i class="btn__icon fa-solid fa-angle-down"></i>
-                </a>
 
-                <ul class="btn__sublist">
-                  <li class="btn__subitem">
-                    <a href="#" class="btn__sublink">
-                      <img
-                        class="btn__svg"
-                        src="./svg-icons/bangladesh-flag.svg"
-                      />
-                      <span class="btn__text">ইংরেজী</span>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <div class="btn__group">
-              <button type="button" class="btn__login">
-                <span class="btn__text">লগ ইন</span>
+            <h2 class="media__info">
+              নিকাহ্ দ্বীন, বাংলাদেশের অন্যতম সর্ববৃহৎ মেট্রিমনি। যেখানে আপনি
+              খুঁজে পেতে পারেন আপনার মনের মত জীবন সঙ্গীনি।
+            </h2>
+          </div>
+          <div class="account">
+            <div class="account__about">
+              <a href="./" class="account__link">
+                <img
+                  src="./assets/images/nikah-deen-main.png"
+                  alt="Nikah Deen is a Bangladeshi Muslim Matrimony"
+                  class="account__img"
+                />
+              </a>
+              <h2 class="account__info">
+                নিকাহ্ দ্বীন, বাংলাদেশের অন্যতম সর্ববৃহৎ মেট্রিমনি। যেখানে আপনি
+                খুঁজে পেতে পারেন আপনার মনের মত জীবন সঙ্গীনি।
+              </h2>
+            </div>
+
+            <form class="account__form">
+              <h3 class="account__title">Create an Account</h3>
+              <div class="account__group">
+                <div class="account__item">
+                  <input
+                    type="text"
+                    class="account__input"
+                    id="first-name"
+                    placeholder=""
+                    required
+                  />
+                  <label for="first-name" class="account__label"
+                    >First Name</label
+                  >
+                  <i
+                    class="account__icon account__icon--user fa-solid fa-user-large"
+                  ></i>
+                </div>
+                <div class="account__item">
+                  <input
+                    type="text"
+                    class="account__input"
+                    id="last-name"
+                    placeholder=""
+                    required
+                  />
+                  <label for="last-name" class="account__label"
+                    >Last Name</label
+                  >
+                  <i
+                    class="account__icon account__icon--user fa-solid fa-user-large"
+                  ></i>
+                </div>
+              </div>
+              <div class="account__group">
+                <div class="account__item">
+                  <input
+                    type="email"
+                    class="account__input"
+                    id="email"
+                    placeholder=""
+                    required
+                  />
+                  <label for="email" class="account__label">Email</label>
+                  <i
+                    class="account__icon account__icon--envelop fa-solid fa-envelope"
+                  ></i>
+                </div>
+                <div class="account__item">
+                  <input
+                    type="password"
+                    class="account__input"
+                    id="password"
+                    placeholder=""
+                    required
+                  />
+                  <label for="password" class="account__label">Password</label>
+                  <i
+                    class="account__icon account__icon--lock fa-solid fa-lock"
+                  ></i>
+                  <i
+                    class="account__icon account__icon--eye fa-solid fa-eye-slash"
+                  ></i>
+                </div>
+              </div>
+              <div class="account__group">
+                <div class="account__item">
+                  <input
+                    type="checkbox"
+                    class="account__checkbox"
+                    id="checkbox1"
+                  />
+                  <label for="checkbox1" class="account__checkmark">
+                    <i class="fa-solid fa-check"></i>
+                  </label>
+                  <span class="account__text">I'm 18 years old now.</span>
+                </div>
+              </div>
+              <div class="account__group">
+                <div class="account__item">
+                  <input
+                    type="checkbox"
+                    class="account__checkbox"
+                    id="checkbox2"
+                  />
+                  <label for="checkbox2" class="account__checkmark">
+                    <i class="fa-solid fa-check"></i>
+                  </label>
+                  <span class="account__text"
+                    >I'll agree with your all the
+                    <a href="./terms-conditions" class="account__link"
+                      >terms and conditions</a
+                    >.</span
+                  >
+                </div>
+              </div>
+              <div class="account__group">
+                <div class="account__item">
+                  <input type="button" value="Submit" class="account__btn" />
+                </div>
+              </div>
+            </form>
+
+            <div class="account__btns">
+              <div class="account__divider">
+                <hr class="account__line" />
+                <span class="account__text">OR</span>
+                <hr class="account__line" />
+              </div>
+              <button class="account__create account__create--google">
+                <img
+                  src="./svg-icons/google.svg"
+                  alt="Account create with Google"
+                  class="account__svg"
+                />
+                <span class="account__text">Sign up with Google</span>
               </button>
-              <button type="button" class="btn__signup">
-                <span class="btn__text">রেজিস্ট্রেশন করুন</span>
-                <i class="btn__icon fa-solid fa-arrow-right-to-bracket"></i>
+              <button class="account__create account__create--facebook">
+                <img
+                  src="./svg-icons/facebook.svg"
+                  alt="Account create with Facebook"
+                  class="account__svg"
+                />
+                <span class="account__text">Sign up with Facebook</span>
               </button>
             </div>
+
+            <!-- <div class="account__footer-menu">
+              <a href="./" class="account__menu-link">Home</a>
+              <a href="./about-us" class="account__menu-link">About Us</a>
+              <a href="./contact-us" class="account__menu-link">Contact Us</a>
+              <a href="./terms-conditions" class="account__menu-link"
+                >Terms & Conditions</a
+              >
+              <a href="./refund-policy" class="account__menu-link"
+                >Refund Policy</a
+              >
+            </div> -->
           </div>
         </div>
-      </div>
-    </header>
-    <!-- Header area ended here -->
-
-    <!-- Content area starts from here -->
-    <main id="content"></main>
+      </section>
+    </main>
     <!-- Content area end ed here -->
 
-    <!-- Footer area starts from here -->
-    <footer id="footer"></footer>
-    <!-- Footer area ended here -->
+    <!--
+    // Practise
+    <div>
+      <p>
+        <abbr title="World Health Organization">WHO</abbr>
+        <span>was founded in 1948.</span>
+      </p>
+      <p>
+        <span
+          >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Aliquam</span
+        >
+        <a href="./">Read More</a>
+      </p>
+    </div>
+    -->
+
+    <!-- Script files -->
+    <script type="text/javascript" src="./js/scripts.js"></script>
   </body>
 </html>

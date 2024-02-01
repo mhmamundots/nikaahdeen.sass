@@ -1,4 +1,53 @@
 .container {
-  width: 80vw;
+  width: 80%;
   margin: 0 auto;
+
+  display: flex;
+  // flex-direction: row;
+  // justify-content: center;
+  // align-items: center;
 }
+
+/*
+// Tag Selector
+div {
+  background-color: #222;
+  color: #23f44d;
+}
+
+// Attribute Selector
+[title='World Health Organization'] {
+  color: yellow;
+}
+
+// Attribute-name Selector
+[title] {
+  color: red;
+}
+
+// State Selector
+[href='./']:link,
+[href='./']:visited {
+  color: #0011ff;
+}
+[href='./']:hover,
+[href='./']:active {
+  color: #ff00dd;
+}
+[href='./']:focus {
+  color: #95ee05;
+}
+// *** OR ***
+a:link,
+a:visited {
+  color: #0011ff;
+}
+a:hover,
+a:active {
+  color: #ff00dd;
+}
+a:focus {
+  color: #95ee05;
+}
+
+*/

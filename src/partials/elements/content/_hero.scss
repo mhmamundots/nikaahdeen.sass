@@ -1,0 +1,395 @@
+// 2    4 8 12 16 20 24 32    40 48 56 64 72 80 88 96    112 128 144 160 176 192
+
+.media {
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 4rem;
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      width: 40%;
+    }
+  }
+  &__img {
+    width: 28rem;
+  }
+  &__info {
+    font-family: $primary-font;
+    font-size: 2.8rem;
+    line-height: 4.2rem;
+    font-weight: 700;
+    color: $white-color;
+
+    width: 80%;
+  }
+}
+.account {
+  width: 50%;
+  height: max-content;
+  padding: 0 0 0 9.6rem;
+
+  // background: url(../assets/images/love-bg.jpg);
+
+  // display: flex;
+  // flex-direction: column;
+  // align-items: stretch;
+  // justify-content: center;
+  // gap: 3.2rem;
+  &__about {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: stretch;
+    // justify-content: center;
+    // row-gap: 1.6rem;
+
+    padding-bottom: 3.2rem;
+
+    display: none;
+  }
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+    }
+  }
+  &__img {
+    width: 28rem;
+  }
+  &__info {
+    font-family: $primary-font;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    font-weight: 600;
+    color: $darker-gray-color;
+  }
+
+  &__form {
+    width: 100%;
+  }
+  &__title {
+    font-family: $secondary-font;
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-bottom: 4.2rem;
+
+    position: relative;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      clear: both;
+
+      width: 15%;
+      height: 0.4rem;
+      background-color: $main-color;
+
+      position: absolute;
+      top: 4.2rem;
+      left: 0;
+    }
+  }
+  &__group {
+    display: flex;
+    flex-direction: row;
+    gap: 2.4rem;
+
+    &:not(:last-child) {
+      margin-bottom: 2.4rem;
+    }
+  }
+  &__item {
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 1.2rem;
+  }
+  &__input {
+    width: 100%;
+    background-color: transparent;
+    display: block;
+
+    font-size: 1.6rem;
+    font-family: $secondary-font;
+    color: inherit;
+    padding: 1.6rem 3.8rem;
+
+    border-radius: 0.6rem;
+    border: 0.1rem solid $darker-gray-color;
+
+    transition: all 0.1s ease-in-out;
+
+    &:focus {
+      outline: none;
+      &:invalid {
+        border: 0.1rem solid $negative-color;
+      }
+      &:valid {
+        border: 0.1rem solid $positive-color;
+      }
+    }
+
+    &:focus ~ .account__label,
+    &:not(:placeholder-shown).account__input:not(:focus) ~ .account__label {
+      top: -0.7rem;
+      left: 2.4rem;
+      background-color: $main-light-color;
+      // background-color: rgba($white-color, 0.9);
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: $darker-gray-color;
+      line-height: 100%;
+      padding: 0 0.8rem;
+    }
+    &::-webkit-input-placeholder {
+      color: $light-gray-color;
+      font-family: $secondary-font;
+    }
+  }
+  &__label {
+    width: max-content;
+    // background-color: rgba($white-color, 0.95);
+
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: $secondary-font;
+    color: rgba($dark-gray-color, 0.5);
+
+    position: absolute;
+    top: 1.8rem;
+    // left: 1.9rem;
+    left: 3.8rem;
+
+    z-index: 1;
+
+    transition: all 0.1s ease-in-out;
+
+    cursor: text;
+  }
+  &__btn {
+    width: 100%;
+    padding: 1.6rem 0;
+    border: none;
+    border-radius: 0.6rem;
+    background-color: $main-color;
+
+    font-size: 1.6rem;
+    font-family: $secondary-font;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    color: $white-color;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: rgba($main-color, 0.8);
+    }
+  }
+  &__checkbox {
+    display: none;
+    &:checked ~ .account__checkmark {
+      border: 0.2rem solid $main-color;
+    }
+    &:checked ~ .account__checkmark i {
+      display: block;
+      color: $main-color;
+    }
+  }
+  &__checkmark {
+    width: 2rem;
+    height: 2rem;
+
+    border: 0.2rem solid $darker-gray-color;
+    border-radius: 0.4rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+      font-size: 1.4rem;
+
+      display: none;
+    }
+  }
+  &__text {
+    font-family: $secondary-font;
+    font-size: 1.6rem;
+    color: $darker-gray-color;
+  }
+  &__link {
+    &:link,
+    &:visited {
+      color: $main-color;
+    }
+  }
+  &__icon {
+    font-size: 1.6rem;
+    color: rgba($dark-gray-color, 0.5);
+
+    position: absolute;
+    top: 1.9rem;
+
+    &--user,
+    &--envelop,
+    &--lock {
+      left: 1.6rem;
+    }
+    &--eye {
+      right: 1.6rem;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+
+    margin-top: 2.4rem;
+  }
+  &__divider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+  }
+  &__line {
+    width: 100%;
+
+    border-width: 0.1rem;
+    border-color: rgba($light-gray-color, 0.4);
+  }
+  &__create {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+
+    background-color: rgba($white-color, 0.8);
+    box-shadow: 0 0 1.6rem 0 rgba($darker-gray-color, 0.02);
+    border: none;
+    border-radius: 0.6rem;
+    padding: 1.4rem 0;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background-color: rgba($white-color, 1);
+    }
+  }
+  &__svg {
+    width: 2.4rem;
+  }
+
+  /*
+  &__footer-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4rem;
+    row-gap: 1.2rem;
+
+    margin-top: 7.2rem;
+  }
+  &__menu-link {
+    &:link,
+    &:visited {
+      font-family: $primary-font;
+      font-size: 1.4rem;
+      font-weight: 500;
+      text-decoration: none;
+      color: $message-color;
+      text-decoration: underline;
+
+      transition: all 0.2s ease-in-out;
+    }
+    &:hover,
+    &:active {
+      color: $main-color;
+    }
+  }
+  */
+}
+
+@media (max-width: 80em) {
+  // 1280px / 16px = 80em
+  html {
+    font-size: 56.25%; // 9 / 16 * 100 = 56.25%
+    .media {
+      &__img {
+      }
+      &__info {
+        width: 90%;
+      }
+    }
+    .account {
+      &__group {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media (max-width: 62em) {
+  // 992px / 16px = 62em
+  .media {
+    display: none;
+  }
+  .account {
+    width: 100%;
+    padding: 0;
+    &__about {
+      display: block;
+    }
+    &__img {
+      margin-bottom: 2rem;
+    }
+    &__info {
+      font-size: 2.4rem;
+      line-height: 3.6rem;
+    }
+    &__group {
+      flex-direction: row !important;
+    }
+  }
+}
+
+@media (max-width: 34em) {
+  // 544px / 16px = 34em
+  html {
+    font-size: 50%;
+  }
+  .account {
+    width: 100%;
+    padding: 0;
+    &__img {
+      width: 55%;
+    }
+    &__info {
+      font-size: 2rem;
+      line-height: 2.8rem;
+    }
+    &__group {
+      flex-direction: column !important;
+    }
+  }
+}

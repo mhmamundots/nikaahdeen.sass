@@ -1,68 +1,25 @@
 // Fonts
 $primary-font: 'Noto Sans Bengali', sans-serif;
+$secondary-font: 'Roboto', sans-serif;
 
 // Colors
-$primary-color: #fafafa;
-$primary-helper-color: #e5e5e5;
-$main-color: #ef4444;
-$main-helper-color: #fef2f2;
-$secondary-color: #404040;
-$secondary-helper-color: #737373;
+$white-color: #ffffff;
 
-// We're using 'sizes' for font-size, margin, padding, width, height
+$light-gray-color: #fafafa;
+$dark-gray-color: #737373;
+$darker-gray-color: #404040; // 525252
+
+$main-color: #ef4444; // #ef4444
+$main-light-color: #fff6f6; // #ef4444
+
+$transparent-color: rgba(0, 0, 0, 0);
+
+// Warning Color
+$waring-color: #eab308;
+$positive-color: #22c55e;
+$negative-color: #ef4444;
+$message-color: #3b82f6;
+$neutral-color: #737373;
+
+// Spacing
 $base-value: 0.4rem;
-
-$sizes: (
-  '0': 0,
-  '1': $base-value,
-  '2': $base-value * 2,
-  '3': $base-value * 3,
-  '4': $base-value * 4,
-  '5': $base-value * 5,
-  '6': $base-value * 6,
-  '7': $base-value * 7,
-  '8': $base-value * 8,
-  '9': $base-value * 9,
-  '10': $base-value * 10,
-  '11': $base-value * 11,
-  '12': $base-value * 12,
-  '13': $base-value * 13,
-  '14': $base-value * 14,
-  '15': $base-value * 15,
-  '16': $base-value * 16,
-  '17': $base-value * 17,
-  '18': $base-value * 18,
-  '19': $base-value * 19,
-  '20': $base-value * 20,
-  '21': $base-value * 21,
-  '22': $base-value * 22,
-  '23': $base-value * 23,
-  '24': $base-value * 24,
-  '25': $base-value * 25
-);
-
-// @each $key, $value in $sizes {
-//   .p-#{$key} {
-//     @if ($key == '0') {
-//       padding: 0;
-//     } @else {
-//       padding: #{$value};
-//     }
-//   }
-// }
-
-// @function red-filter($color, $weight: 30, $red: #c40505) {
-//   @return mix($red, $color, $weight);
-// }
-
-// .content {
-//   background-color: red-filter(rgb(15, 19, 17), 5);
-// }
-
-// @function sum($numbers...) {
-//   $sum: 0;
-//   @each $number in $numbers {
-//     $sum: $sum + $number;
-//   }
-//   @return $sum;
-// }
