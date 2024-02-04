@@ -1,12 +1,13 @@
-#content {
+/*************************************************
+****** signup page LAYOUT style starts here ******
+**************************************************/
+#signup-content {
   width: 100%;
   height: 100%;
 
-  #hero {
+  #signup {
     width: 100%;
     height: 100vh;
-    // height: 100%;
-    // padding: 18.45rem 0;
 
     background: linear-gradient(
         90deg,
@@ -19,15 +20,13 @@
     background-size: cover;
     background-position: center;
 
-    // background-color: rgb(255, 203, 194);
-
     display: flex;
     align-items: center;
 
     .container {
       width: 80%;
       margin: 0 auto;
-      .registration {
+      .row {
         width: 100%;
 
         display: flex;
@@ -36,42 +35,79 @@
         align-items: center;
       }
     }
-    // width: 100vw;
-    // height: 100vh;
-    // padding: 5.2rem 0;
-
-    // background: linear-gradient(
-    //     90deg,
-    //     rgba($main-color, 0.2) 0%,
-    //     rgba($main-color, 0.7) 50%,
-    //     rgba($main-light-color, 1) 50%
-    //   ),
-    //   url(../assets/images/nikah-deen-bg.jpg);
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: center;
-
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
   }
 }
 
+/*****************************************
+****** signup page LAYOUT style End ******
+******************************************/
+
+/*************************************************
+***** upcoming page LAYOUT style starts here *****
+**************************************************/
+// Upcoming Page
+#upcoming-content {
+  width: 100%;
+  height: 100%;
+
+  #upcoming {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    // background: url(../assets/images/islamic-wedding.png) rgba($main-color, 0.5);
+
+    background: linear-gradient(
+        90deg,
+        rgba($main-light-color, 0.95) 0%,
+        rgba($main-light-color, 0.95) 50%
+      ),
+      url(../assets/images/islamic-wedding.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      .row {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+/*************************************************
+***** upcoming page LAYOUT style starts here *****
+**************************************************/
+
 @media (max-width: 80em) {
   // 1280px / 16px = 80em
-  #hero {
+  #signup {
     height: 100% !important;
+    padding: 18.45rem 0;
+  }
 
+  #upcoming {
+    height: 100% !important;
     padding: 18.45rem 0;
   }
 }
 
 @media (max-width: 62em) {
   // 992px / 16px = 62em
-  #hero {
+  #signup {
     background: $main-light-color !important;
-    // height: 100%;
-
     padding: 8rem 0;
   }
   .media {
@@ -80,12 +116,18 @@
   .account {
     width: 100%;
   }
+
+  #upcoming {
+    padding: 8rem 0;
+  }
 }
 
 @media (max-width: 34em) {
   // 544px / 16px = 34em
-  #hero {
-    // height: max-content;
+  #signup {
+    padding: 5.2rem 0;
+  }
+  #upcoming {
     padding: 5.2rem 0;
   }
 }

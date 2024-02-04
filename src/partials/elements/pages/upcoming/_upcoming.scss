@@ -1,0 +1,202 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 6rem;
+
+  font-family: $secondary-font;
+  color: $darker-gray-color;
+
+  &__logo {
+  }
+  &__img {
+    width: 28rem;
+  }
+
+  &__header {
+    text-align: center;
+  }
+  &__heading {
+    font-size: 4.2rem;
+    line-height: 4.2rem;
+    font-family: inherit;
+    color: inherit;
+    margin-bottom: 1.2rem;
+  }
+  &__text {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-family: inherit;
+    color: $dark-gray-color;
+  }
+
+  &__timer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3.2rem;
+
+    // font-family: $secondary-font;
+  }
+  &__time {
+    text-align: center;
+  }
+  &__number {
+    font-size: 5.2rem;
+    font-weight: 700;
+    font-family: inherit;
+    color: inherit;
+  }
+  &__text {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: inherit;
+    color: $dark-gray-color;
+  }
+  &__colon {
+    font-size: 5.2rem;
+    font-family: inherit;
+    color: $main-color;
+  }
+
+  &__newsletter {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.6rem;
+  }
+  &__title {
+    font-family: inherit;
+    font-size: 2rem;
+    font-weight: 400;
+
+    text-align: center;
+  }
+  &__form {
+    width: 100%;
+    text-align: center;
+
+    display: flex;
+
+    box-shadow: 0 0 2.4rem 0 rgba($darker-gray-color, 0.1rem);
+  }
+  &__input {
+    width: 70%;
+    padding: 1.6rem 2rem;
+
+    border: none;
+    border-top-left-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+
+    &::placeholder {
+      font-size: 1.6rem;
+      font-family: inherit;
+      color: $dark-gray-color;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+  &__btn {
+    width: 30%;
+
+    border: none;
+    background-color: $main-color;
+
+    border-top-right-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+
+    font-family: inherit;
+    color: $white-color;
+
+    font-size: 1.6rem;
+    font-weight: 500;
+
+    padding: 1.6rem 2rem;
+
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 80em) {
+  // 1280px / 16px = 80em
+  html {
+    font-size: 56.25%; // 9 / 16 * 100 = 56.25%
+  }
+}
+
+@media (max-width: 62em) {
+  // 992px / 16px = 62em
+  .page {
+    row-gap: 4.2rem;
+    &__heading {
+      font-size: 3.2rem;
+      line-height: 3.6rem;
+    }
+    &__timer {
+      column-gap: 2rem;
+    }
+    &__number {
+      font-size: 3.8rem;
+    }
+  }
+}
+
+@media (max-width: 34em) {
+  // 544px / 16px = 34em
+  .page {
+    width: 100%;
+    padding: 0 1.6rem;
+
+    row-gap: 3.2rem;
+    &__img {
+      width: 100%;
+    }
+    &__header {
+    }
+    &__heading {
+      font-size: 2.4rem;
+      line-height: 3.2rem;
+    }
+    &__text {
+      font-size: 1.4rem;
+      line-height: 2rem;
+    }
+    &__timer {
+      column-gap: 0.8rem;
+    }
+    &__number {
+      font-size: 2.8rem;
+    }
+    &__text {
+      font-size: 1.4rem;
+    }
+    &__colon {
+      font-size: 3.2rem;
+    }
+    &__newsletter {
+      width: 100%;
+    }
+    &__form {
+      width: 100%;
+
+      flex-direction: column;
+      row-gap: 1.6rem;
+      box-shadow: none;
+    }
+    &__input {
+      width: 100%;
+      border-radius: 0.8rem;
+    }
+    &__btn {
+      width: 100%;
+      border-radius: 0.8rem;
+    }
+    &__title {
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+    }
+  }
+}

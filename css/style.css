@@ -56,54 +56,14 @@ body {
   font-family: #404040;
 }
 
-/*
-// Tag Selector
-div {
-  background-color: #222;
-  color: #23f44d;
-}
-
-// Attribute Selector
-[title='World Health Organization'] {
-  color: yellow;
-}
-
-// Attribute-name Selector
-[title] {
-  color: red;
-}
-
-// State Selector
-[href='./']:link,
-[href='./']:visited {
-  color: #0011ff;
-}
-[href='./']:hover,
-[href='./']:active {
-  color: #ff00dd;
-}
-[href='./']:focus {
-  color: #95ee05;
-}
-// *** OR ***
-a:link,
-a:visited {
-  color: #0011ff;
-}
-a:hover,
-a:active {
-  color: #ff00dd;
-}
-a:focus {
-  color: #95ee05;
-}
-
-*/
-#content {
+/*************************************************
+****** signup page LAYOUT style starts here ******
+**************************************************/
+#signup-content {
   width: 100%;
   height: 100%;
 }
-#content #hero {
+#signup-content #signup {
   width: 100%;
   height: 100vh;
   background: -webkit-gradient(linear, left top, right top, from(rgba(239, 68, 68, 0.2)), color-stop(50%, rgba(239, 68, 68, 0.7)), color-stop(50%, #fff6f6)), url(../assets/images/nikah-deen-bg.jpg);
@@ -118,11 +78,11 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
 }
-#content #hero .container {
+#signup-content #signup .container {
   width: 80%;
   margin: 0 auto;
 }
-#content #hero .container .registration {
+#signup-content #signup .container .row {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -139,14 +99,70 @@ a:focus {
           align-items: center;
 }
 
+/*****************************************
+****** signup page LAYOUT style End ******
+******************************************/
+/*************************************************
+***** upcoming page LAYOUT style starts here *****
+**************************************************/
+#upcoming-content {
+  width: 100%;
+  height: 100%;
+}
+#upcoming-content #upcoming {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 246, 246, 0.95)), color-stop(50%, rgba(255, 246, 246, 0.95))), url(../assets/images/islamic-wedding.png);
+  background: linear-gradient(90deg, rgba(255, 246, 246, 0.95) 0%, rgba(255, 246, 246, 0.95) 50%), url(../assets/images/islamic-wedding.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+#upcoming-content #upcoming .container {
+  width: 80%;
+  margin: 0 auto;
+}
+#upcoming-content #upcoming .container .row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*************************************************
+***** upcoming page LAYOUT style starts here *****
+**************************************************/
 @media (max-width: 80em) {
-  #hero {
+  #signup {
+    height: 100% !important;
+    padding: 18.45rem 0;
+  }
+
+  #upcoming {
     height: 100% !important;
     padding: 18.45rem 0;
   }
 }
 @media (max-width: 62em) {
-  #hero {
+  #signup {
     background: #fff6f6 !important;
     padding: 8rem 0;
   }
@@ -158,12 +174,23 @@ a:focus {
   .account {
     width: 100%;
   }
+
+  #upcoming {
+    padding: 8rem 0;
+  }
 }
 @media (max-width: 34em) {
-  #hero {
+  #signup {
+    padding: 5.2rem 0;
+  }
+
+  #upcoming {
     padding: 5.2rem 0;
   }
 }
+/***************************************************
+****** signup page ELEMENTS style starts here ******
+****************************************************/
 .media {
   width: 50%;
   display: -webkit-box;
@@ -200,36 +227,6 @@ a:focus {
 .account {
   width: 50%;
   padding: 0 0 0 9.6rem;
-  /*
-  &__footer-menu {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    column-gap: 4rem;
-    row-gap: 1.2rem;
-
-    margin-top: 7.2rem;
-  }
-  &__menu-link {
-    &:link,
-    &:visited {
-      font-family: $primary-font;
-      font-size: 1.4rem;
-      font-weight: 500;
-      text-decoration: none;
-      color: $message-color;
-      text-decoration: underline;
-
-      transition: all 0.2s ease-in-out;
-    }
-    &:hover,
-    &:active {
-      color: $main-color;
-    }
-  }
-  */
 }
 .account__about {
   padding-bottom: 3.2rem;
@@ -545,6 +542,229 @@ a:focus {
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
+  }
+}
+/***************************************************
+********* signup page ELEMENTS style ends **********
+****************************************************/
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  row-gap: 6rem;
+  font-family: "Roboto", sans-serif;
+  color: #404040;
+}
+.page__img {
+  width: 28rem;
+}
+.page__header {
+  text-align: center;
+}
+.page__heading {
+  font-size: 4.2rem;
+  line-height: 4.2rem;
+  font-family: inherit;
+  color: inherit;
+  margin-bottom: 1.2rem;
+}
+.page__text {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-family: inherit;
+  color: #737373;
+}
+.page__timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 3.2rem;
+          column-gap: 3.2rem;
+}
+.page__time {
+  text-align: center;
+}
+.page__number {
+  font-size: 5.2rem;
+  font-weight: 700;
+  font-family: inherit;
+  color: inherit;
+}
+.page__text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: inherit;
+  color: #737373;
+}
+.page__colon {
+  font-size: 5.2rem;
+  font-family: inherit;
+  color: #ef4444;
+}
+.page__newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1.6rem;
+}
+.page__title {
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+}
+.page__form {
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0 0 2.4rem 0 rgba(64, 64, 64, 0.1);
+          box-shadow: 0 0 2.4rem 0 rgba(64, 64, 64, 0.1);
+}
+.page__input {
+  width: 70%;
+  padding: 1.6rem 2rem;
+  border: none;
+  border-top-left-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
+}
+.page__input::-webkit-input-placeholder {
+  font-size: 1.6rem;
+  font-family: inherit;
+  color: #737373;
+}
+.page__input:-ms-input-placeholder {
+  font-size: 1.6rem;
+  font-family: inherit;
+  color: #737373;
+}
+.page__input::-ms-input-placeholder {
+  font-size: 1.6rem;
+  font-family: inherit;
+  color: #737373;
+}
+.page__input::placeholder {
+  font-size: 1.6rem;
+  font-family: inherit;
+  color: #737373;
+}
+.page__input:focus {
+  outline: none;
+}
+.page__btn {
+  width: 30%;
+  border: none;
+  background-color: #ef4444;
+  border-top-right-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+  font-family: inherit;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1.6rem 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 80em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 62em) {
+  .page {
+    row-gap: 4.2rem;
+  }
+  .page__heading {
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+  }
+  .page__timer {
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+  }
+  .page__number {
+    font-size: 3.8rem;
+  }
+}
+@media (max-width: 34em) {
+  .page {
+    width: 100%;
+    padding: 0 1.6rem;
+    row-gap: 3.2rem;
+  }
+  .page__img {
+    width: 100%;
+  }
+  .page__heading {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+  }
+  .page__text {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  .page__timer {
+    -webkit-column-gap: 0.8rem;
+            column-gap: 0.8rem;
+  }
+  .page__number {
+    font-size: 2.8rem;
+  }
+  .page__text {
+    font-size: 1.4rem;
+  }
+  .page__colon {
+    font-size: 3.2rem;
+  }
+  .page__newsletter {
+    width: 100%;
+  }
+  .page__form {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 1.6rem;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .page__input {
+    width: 100%;
+    border-radius: 0.8rem;
+  }
+  .page__btn {
+    width: 100%;
+    border-radius: 0.8rem;
+  }
+  .page__title {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
   }
 }
 
